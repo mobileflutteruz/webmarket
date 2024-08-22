@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="clean">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/jpg" href="logo.jpg" />
+  <title>Smart Home</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    var serviceWorkerVersion = '{{flutter_service_worker_version}}';
+  </script>
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  
+  <script src="main.dart.js?version=10" type="application/javascript"></script>
+  
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDfSD0jbE4aVWE3ZGjQqNSnyw3KKixEltE",
+      authDomain: "smarthome-cc256.firebaseapp.com",
+      databaseURL: "https://smarthome-cc256-default-rtdb.firebaseio.com",
+      projectId: "smarthome-cc256",
+      storageBucket: "smarthome-cc256.appspot.com",
+      messagingSenderId: "1066327987816",
+      appId: "1:1066327987816:web:ab732359856260fa9acddd",
+      measurementId: "G-DN9KVG8HX4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+    // Initialize Firebase Storage
+    const storage = firebase.storage();
+  </script>
+</body>
+</html>

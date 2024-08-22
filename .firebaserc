@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "webmarket-6e86f",
+    "webmarket-prod": "webmarket-6e86f"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
